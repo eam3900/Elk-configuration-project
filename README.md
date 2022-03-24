@@ -1,3 +1,4 @@
+
 # Elk-configuration-project
 ## Automated ELK Stack Deployment
 
@@ -27,18 +28,18 @@ This document contains the following details:
 
 The main purpose of this network is to expose a load-balanced and monitored instance of DVWA, the D*mn Vulnerable Web Application.
 
-Load balancing ensures that the application will be highly responsive, in addition to restricting inbound acess to the network.
+Load balancing ensures that the application will be highly responsive, in addition to restricting inbound access to the network.
 - What aspect of security do load balancers protect?
 
-Accorindg to IBM.com, load balancers allow even distribution of network traffic to prevent failure caused by overloading a particular resource.This strategy improves
-the availability and performance of applications, websites, databases, and other computing resources. Additionally, this helps process user request quickly and accurately.
+According to IBM.com, load balancers allow even distribution of network traffic to prevent failure caused by overloading a particular resource.This strategy improves
+the availability and performance of applications, websites, databases, and other computing resources. Additionally, this helps process user requests quickly and accurately.
 
-From a user perspective, load balancing acts as an invisible facilitator that sits between a client and a group of servers, ensuring connection request dont get lost. Without load balancing,
+From a user perspective, load balancing acts as an invisible facilitator that sits between a client and a group of servers, ensuring connection requests don't get lost. Without load balancing,
 applications,websites,databases, and online services would likely fail when demand gets too high.
 
 - What is the advantage of a jump box?
 
-First, let's dive into what a jumpbox is. A jumpbox, a.k.a jump server or jump host, is a secure server that requires all system administrators to first connect to before launching any
+First, let's dive into what a jump box is. A jumpbox, a.k.a jump server or jump host, is a secure server that requires all system administrators to first connect to before launching any
 administrative task or use as an origination point to connect to other servers or untrusted environments. The advantage of this secure computer is that it allows users 24/7 remote access while being
 very restrictive at granting access.
 
@@ -90,7 +91,7 @@ A summary of the access policies in place can be found in the table below.
 ### Elk Configuration
 
 Ansible was used to automate configuration of the ELK machine. No configuration was performed manually, which is advantageous because it saves time and allows us to be more productive. By using
-Ansible to configure our new Elk server, we eliminate repetative task,make fewer mistakes and errors and it improves collaboration and job satisfaction. Ansible is simple yet powerfule enough to overcome complexity.
+Ansible to configure our new Elk server, we eliminate repetitive tasks,make fewer mistakes and errors and it improves collaboration and job satisfaction. Ansible is simple yet powerful enough to overcome complexity.
 
 The playbook implements the following tasks:
 - Install docker.io
@@ -111,7 +112,7 @@ We have installed the following Beats on these machines:
 - Metricbeat
 
 These Beats allow us to collect the following information from each machine:
-- Filebeat will collect data such as 'SSH logins' which will allow us to view SSH login attemps and see how many were successful.
+- Filebeat will collect data such as 'SSH logins' which will allow us to view SSH login attempts and see how many were successful.
 - Metricbeat will collect system metrics such as CPU usage and can be used to examine inconsistencies.
 
 
@@ -120,5 +121,5 @@ In order to use the playbook, you will need to have an Ansible control node alre
 
 SSH into the control node and follow the steps below:
 - Copy the elkplaybook.yml file to /etc/ansible.
-- Update the /etc/ansible/hosts file to include the newly configured ELK serever...
+- Update the /etc/ansible/hosts file to include the newly configured ELK server...
 - Run the playbook, and navigate to ELK VM via SSH to check that the installation worked as expected.
