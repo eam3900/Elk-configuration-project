@@ -9,7 +9,7 @@ These files have been tested and used to generate a live ELK deployment on Azure
 
     [elkplaybook.yml](https://github.com/eam3900/Elk-configuration-project/blob/9cf7adcfc8ee6766c12c502d45c2b180e9345a1c/Ansible/elkplaybook.yml)
     [filebeat_playbook.yml](https://github.com/eam3900/Elk-configuration-project/blob/9cf7adcfc8ee6766c12c502d45c2b180e9345a1c/Ansible/filebeat_playbook.yml)
-    [my_playbook.yml](https://github.com/eam3900/Elk-configuration-project/blob/9cf7adcfc8ee6766c12c502d45c2b180e9345a1c/Ansible/my_playbook.yml)
+    (Ansible/my_playbook.yml)
 
 
 This document contains the following details:
