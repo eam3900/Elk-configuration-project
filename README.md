@@ -5,13 +5,15 @@ The files in this repository were used to configure the network depicted below.
 
 ![Cloud Security Diagram](Diagrams/Cloud_Security_Diagram.png)
 
-These files have been tested and used to generate a live ELK deployment on Azure. They can be used to either recreate the entire deployment pictured above. Alternatively, select portions of the YAML file may be used to install only certain pieces of it, such as Filebeat.
-
-    [elkplaybook.yml](https://github.com/eam3900/Elk-configuration-project/blob/9cf7adcfc8ee6766c12c502d45c2b180e9345a1c/Ansible/elkplaybook.yml)
-    [filebeat_playbook.yml](https://github.com/eam3900/Elk-configuration-project/blob/9cf7adcfc8ee6766c12c502d45c2b180e9345a1c/Ansible/filebeat_playbook.yml
-    https://github.com/eam3900/Elk-configuration-project/blob/29de442ccf696089f15eff3420511e2501d431be/Ansible/my_playbook.yml
 
 
+
+These files have been tested and used to generate a live ELK deployment on Azure. They can be used to either recreate the entire deployment pictured above. 
+Alternatively, select portions of the YAML file may be used to install only certain pieces of it, such as Filebeat.
+- [My Playbook](https://github.com/eam3900/Elk-configuration-project/blob/29de442ccf696089f15eff3420511e2501d431be/Ansible/my_playbook.yml)
+- [Elk Playbook](https://github.com/eam3900/Elk-configuration-project/blob/45b8985861e765794c3ddd0f3c7d16046809edd4/Ansible/elkplaybook.yml)
+- [Filebeat and Metricbeat Playbook](https://github.com/eam3900/Elk-configuration-project/blob/45b8985861e765794c3ddd0f3c7d16046809edd4/Ansible/filebeat_playbook.yml)
+ 
 This document contains the following details:
 - Description of the Topology
 - Access Policies
@@ -34,7 +36,7 @@ the availability and performance of applications, websites, databases, and other
 From a user perspective, load balancing acts as an invisible facilitator that sits between a client and a group of servers, ensuring connection request dont get lost. Without load balancing,
 applications,websites,databases, and online services would likely fail when demand gets too high.
 
-- What is the advantage of a jump box?_
+- What is the advantage of a jump box?
 
 First, let's dive into what a jumpbox is. A jumpbox, a.k.a jump server or jump host, is a secure server that requires all system administrators to first connect to before launching any
 administrative task or use as an origination point to connect to other servers or untrusted environments. The advantage of this secure computer is that it allows users 24/7 remote access while being
@@ -49,7 +51,8 @@ Integrating an ELK server allows users to easily monitor the vulnerable VMs for 
 File beat is a lightweight shipper for forwarding and centralizing log data. Filebeat's two main components work together to tail files and send event data to your specified output.
 
 
-- What does Metricbeat record?_
+- What does Metricbeat record?
+
 Much like Filebeat is "a lightweight shipper for forwarding and centralizing data", Metricbeat is detailed as "a lightweight shipper for metrics". Metricbeat will collect the metrics on your OS
 and from the services running on the server and send them to your specified output.
 
